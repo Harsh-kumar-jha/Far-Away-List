@@ -29,8 +29,9 @@ function App() {
         items={items}
         onDeleteItem={handleDelete}
         onToggleItem={handleTogglePacked}
+        onClearItem={setItems}
       />
-      <Stats />
+      <Stats items={items} />
     </div>
   );
 }
